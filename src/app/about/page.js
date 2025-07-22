@@ -21,11 +21,11 @@ const about = () => {
           <div className='text-center'>
             <h2> {`I'm`} a full-stack developer based in Pune, India.<br/>
                    I enjoy building web application and learn new techonologies</h2>
-            <h2 className="text-purple-300 mt-4 mb-4">"An Arts Graduate Navigating the Tech World <br/> One Line of Code at a Time."</h2>
+            <h2 className="text-purple-300 mt-4 mb-4">{`"An Arts Graduate Navigating the Tech World `}<br/>{` One Line of Code at a Time."`}</h2>
             <p>My background might not be in Computer Science, 
               but my curiosity for how things work on the web led me here.<br/> 
               I started with zero experience, just a spark of interest
-              and now <br/> I’m diving deep into web development, building 
+              and now <br/> {`I'm`} diving deep into web development, building 
               projects with React, Next.js, and exploring the magic of clean UI.</p>
           </div>
 
