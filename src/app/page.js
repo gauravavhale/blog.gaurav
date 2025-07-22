@@ -14,7 +14,7 @@ export default function Home() {
          </div>
       </div>
       <div className="w-full md:w-2/3">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl">Hey, I'm Gaurav <br/>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl">{`Hey, I'm Gaurav `}<br/>
           a full-stack developer sharing<br/> 
           my tech journey<br/>
           in web development.</h1>        
