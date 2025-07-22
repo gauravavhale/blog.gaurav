@@ -36,7 +36,7 @@ export const Navbar = () => {
         <div className='navLinks flex flex-row gap-x-6 justify-around '>
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
-            <Link href='/'>blog</Link>
+            <Link href='/blog'>blog</Link>
             <Link href='/'>Project</Link>
             <button > 
               {/* onClick={toggleTheme} */}

@@ -78,6 +78,7 @@ export default function Home() {
         </div>
 
       </div>
+      <div className="m-10 text-center text-sm">Currently learning Next.js App/Router - follow along</div>
     </div>
 
 
