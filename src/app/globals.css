@@ -33,5 +33,6 @@ body{
   line-height: 24px;
   color: rgb(204, 204, 204);
   background-color: #121212; 
+  overflow-x: hidden;
 }
 

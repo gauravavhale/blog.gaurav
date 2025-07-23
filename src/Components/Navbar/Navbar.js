@@ -29,7 +29,7 @@ export const Navbar = () => {
   // }
 
   return (
-    <nav className='flex justify-between items-center p-4 border-b border-white top-0' style={{width:"100vw"}}>
+    <nav className='flex justify-between items-center p-4 border-b border-white top-0 w-[100vw]'>
         <div className='sm:text-sm md:text-lg lg:text-xl font-bold'>
             <h5>gaurav.dev</h5>
         </div>
