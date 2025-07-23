@@ -33,15 +33,15 @@ export const Navbar = () => {
         <div className='sm:text-sm md:text-lg lg:text-xl font-bold'>
             <h5>gaurav.dev</h5>
         </div>
-        <div className='navLinks flex flex-row gap-x-6 justify-around '>
+        <div className='flex flex-row gap-x-5 justify-center '>
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
             <Link href='/blog'>blog</Link>
             <Link href='/projects'>Project</Link>
-            <button > 
+            {/* <button > 
               {/* onClick={toggleTheme} */}
-              <HiOutlineLightBulb className='text-2xl' />
-            </button>
+              {/* <HiOutlineLightBulb className='text-2xl' />
+            </button> */}
         </div>
     </nav>
   )

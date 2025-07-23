@@ -4,12 +4,12 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className='mb-10' style={{minHeight:"80vh"}}>
+    <div className='mb-10 mt-15 min-h-[80vh] max-w-[100vw]'>
     
     {/* Intro */}
-    <div className="mt-15 flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
+    <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
       <div className="w-full md:w-1/3 flex justify-center ">
-         <div className="w-[300px] h-[300px] rounded-full overflow-hidden bg-cyan-100 m-0 md:ml-0 lg:ml-48">
+         <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px]  rounded-full overflow-hidden bg-cyan-100 m-0 md:ml-0 lg:ml-48">
             <Image src="/images/avatar3.png"  width={300} height={300} className="object-cover w-full h-full" alt="avatar"></Image>
          </div>
       </div>
