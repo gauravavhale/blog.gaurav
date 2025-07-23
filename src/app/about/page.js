@@ -9,16 +9,16 @@ import { FaAjax } from 'react-icons/fa6'; // if you want something symbolic for 
 
 const about = () => {
   return (
-    <div className='mb-5 p-5' style={{minHeight:"80vh"}}>
+    <div className=' mb-5 p-5' style={{minHeight:"80vh"}}>
         <h2 className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>About</h2>
         
-        <div className='flex flex-col items-center r'>
+        <div className='flex flex-col items-center'>
 
           <div>
             <Image src="/images/avatar3.png" width={100} height={100} alt='avatar'></Image>
           </div>
 
-          <div className='text-center'>
+          <div className='sm:text-xl md:text-xl text-center'>
             <h2> {`I'm`} a full-stack developer based in Pune, India.<br/>
                    I enjoy building web application and learn new techonologies</h2>
             <h2 className="text-purple-300 mt-4 mb-4">{`"An Arts Graduate Navigating the Tech World `}<br/>{` One Line of Code at a Time."`}</h2>

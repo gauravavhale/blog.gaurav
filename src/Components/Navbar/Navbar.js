@@ -29,7 +29,7 @@ export const Navbar = () => {
   // }
 
   return (
-    <nav className='flex justify-between items-center p-4 border-b border-white  top-0 w-full'>
+    <nav className='flex justify-between items-center p-4 border-b border-white top-0' style={{width:"100vw"}}>
         <div className='sm:text-sm md:text-lg lg:text-xl font-bold'>
             <h5>gaurav.dev</h5>
         </div>
@@ -37,7 +37,7 @@ export const Navbar = () => {
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
             <Link href='/blog'>blog</Link>
-            <Link href='/'>Project</Link>
+            <Link href='/projects'>Project</Link>
             <button > 
               {/* onClick={toggleTheme} */}
               <HiOutlineLightBulb className='text-2xl' />

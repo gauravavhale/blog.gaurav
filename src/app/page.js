@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className='mb-10' style={{minHeight:"80vh"}}>
     
     {/* Intro */}
     <div className="mt-15 flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
