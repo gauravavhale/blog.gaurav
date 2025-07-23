@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
       <head>
         <title>gaurav.blog</title>
         <link rel="icon" href="images/avatar.png" ></link>
+        <meta name="theme-color" content="#121212; " />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar/>

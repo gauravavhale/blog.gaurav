@@ -8,19 +8,19 @@ import { LiaFileCodeSolid } from 'react-icons/lia'; // for Rest API
 
 const about = () => {
   return (
-    <div className=' mb-5 pb-5 pr-5 pl-5' style={{minHeight:"80vh"}}>
+    <div className=' mb-10 pb-5 pr-5 pl-5 mt-15' style={{minHeight:"80vh"}}>
         <h2 className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>About</h2>
         
         <div className='flex flex-col items-center'>
 
-          <div>
+          <div >
             <Image src="/images/avatar3.png" width={100} height={100} alt='avatar'></Image>
           </div>
 
-          <div className='sm:text-xl md:text-xl text-center'>
+          <div className='sm:text-xl md:text-xl text-center mt-1'>
             <h2> {`I'm`} a full-stack developer based in Pune, India.<br/>
-                   I enjoy building web application and learn new techonologies</h2>
-            <h2 className="text-purple-300 mt-4 mb-4">{`"An Arts Graduate Navigating the Tech World `}<br/>{` One Line of Code at a Time."`}</h2>
+                   I enjoy building web application and learn new technologies</h2>
+            <h2 className="text-purple-300 mt-5 mb-4">{`"An Arts Graduate Navigating the Tech World `}<br/>{` One Line of Code at a Time."`}</h2>
             <p>My background might not be in Computer Science, 
               but my curiosity for how things work on the web led me here.<br/> 
               I started with zero experience, just a spark of interest

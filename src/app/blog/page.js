@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div className='mb-10' style={{minHeight:"80vh"}}>
+    <div className='mb-10 mt-15' style={{minHeight:"80vh"}}>
         <div className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>Blog</div>
 
         <div className='flex flex-col items-center gap-4 pt-10 pr-5 pl-5'>
