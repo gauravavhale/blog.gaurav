@@ -29,11 +29,11 @@ export const Navbar = () => {
   // }
 
   return (
-    <nav className='flex justify-between items-center p-4 border-b border-white top-0 w-[100vw]'>
-        <div className='sm:text-sm md:text-lg lg:text-xl font-bold'>
+    <nav className='fixed top-0 z-50 bg-[#121212] flex  items-center p-4 border-b border-white w-[100vw] pr-[12px] sm-pr[16px] md:pr-[100px] lg:pr-[200px]'>
+        <div className='text-sm sm:text-sm md:text-lg lg:text-xl font-bold'>
             <h5>gaurav.dev</h5>
         </div>
-        <div className='flex flex-row gap-x-5 justify-center '>
+        <div className='flex ml-auto justify-between gap-x-4 md:gap-x-12'>
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
             <Link href='/blog'>blog</Link>

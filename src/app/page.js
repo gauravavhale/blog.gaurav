@@ -4,17 +4,17 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className='mb-10 mt-15 md:mt-20 min-h-[80vh] max-w-[100vw]'>
+    <div className='mb-10 mt-25 md:mt-30 min-h-[80vh] max-w-[100vw]'>
     
     {/* Intro */}
     <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
       <div className="w-full md:w-1/2 flex justify-center ">
-         <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]  rounded-full overflow-hidden bg-cyan-100 m-0 md:ml-0 lg:ml-100">
+         <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]   m-0 md:ml-0 lg:ml-100">
             <Image src="/images/avatar3.png"  width={300} height={300} className="object-cover w-full h-full" alt="avatar"></Image>
          </div>
       </div>
       <div className="w-full md:w-1/2">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl">{`Hey, I'm Gaurav `}<br/>
+        <h1 className="text-xl leading-8 md:text-2xl md:leading-10 lg:text-3xl lg:leading-10 md:pt-[30px]">{`Hey, I'm Gaurav `}<br/>
           a full-stack developer sharing<br/> 
           my tech journey<br/>
           in web development.</h1>        
@@ -27,28 +27,28 @@ export default function Home() {
       <h2 className="text-center mb-6 text-2xl font-bold">Latest Projects</h2> 
       <div className="flex flex-col items-center gap-2 md:flex-row justify-center">
 
-        <div className=" items-center w-70 h-40 p-4 m-2 border-2 border-white rounded-2xl">
+        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">Javascript Tips and Tricks</h2>
           <div className="text-sm m-1"> April 19 2024 </div>
           <div className="text-sm m-1">Javascript Tips and Tricks</div>
           <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
         </div> 
 
-        <div className=" items-center w-70 h-40 p-4 m-2 border-2 border-white rounded-2xl ">
+        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl ">
           <h2 className="text-xl">Javascript Tips and Tricks</h2>
           <div className="text-sm m-1"> April 19 2024 </div>
           <div className="text-sm m-1">Javascript Tips and Tricks</div>
           <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
         </div>
 
-        <div className=" items-center w-70 h-40 p-4 m-2 border-2 border-white rounded-2xl">
+        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">Javascript Tips and Tricks</h2>
           <div className="text-sm m-1"> April 19 2024 </div>
           <div className="text-sm m-1">Javascript Tips and Tricks</div>
           <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
         </div>
 
-        <div className=" items-center w-70 h-40 p-4 m-2 border-2 border-white rounded-2xl">
+        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">Javascript Tips and Tricks</h2>
           <div className="text-sm m-1"> April 19 2024 </div>
           <div className="text-sm m-1">Javascript Tips and Tricks</div>
@@ -65,7 +65,7 @@ export default function Home() {
 
         <div className=" items-center w-80 h-45 md:w-100 md:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">SwiftCart</h2>
-          <div className="text-sm m-1 mb-4 leading-6">A full-stack e-commerce web application built with React, Next.js, Redux, Express, Node.js, JWT, and MongoDB.</div>
+          <div className="text-sm m-1 mb-4 leading-6">A full-stack e-commerce web application built with React, Next.js, Express, Node.js, JWT, and MongoDB.</div>
           <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4"> GitHub </Link>
           <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2"> Live Demo </Link>
         </div>
