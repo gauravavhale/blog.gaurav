@@ -4,12 +4,11 @@ import { SiJavascript, SiTailwindcss, SiBootstrap, SiRedux, SiNextdotjs, SiReact
 import { FaMobileAlt } from 'react-icons/fa';
 import { BiLockAlt } from 'react-icons/bi'; // for JWT
 import { LiaFileCodeSolid } from 'react-icons/lia'; // for Rest API
-import { FaAjax } from 'react-icons/fa6'; // if you want something symbolic for AJAX
 
 
 const about = () => {
   return (
-    <div className=' mb-5 p-5' style={{minHeight:"80vh"}}>
+    <div className=' mb-5 pb-5 pr-5 pl-5' style={{minHeight:"80vh"}}>
         <h2 className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>About</h2>
         
         <div className='flex flex-col items-center'>
