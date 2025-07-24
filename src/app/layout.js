@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head className="dark">
+      <head>
         <title>gaurav.blog</title>
         <link rel="icon" href="images/avatar.png" ></link>
         <meta name="theme-color" content="#121212; " />

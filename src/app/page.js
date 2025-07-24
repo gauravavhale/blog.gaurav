@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className='dark bg-red-600 dark:bg-black mb-10 mt-25 md:mt-30 min-h-[80vh] max-w-[100vw]'>
+    <div className='mb-10 mt-25 md:mt-30 min-h-[80vh] max-w-[100vw]'>
     
     {/* Intro */}
     <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
