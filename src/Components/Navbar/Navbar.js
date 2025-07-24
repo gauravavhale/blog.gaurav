@@ -12,7 +12,7 @@ export const Navbar = () => {
         <div className='flex ml-auto justify-between gap-x-4 md:gap-x-12'>
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
-            <Link href='/blog'>blog</Link>
+            <Link href='/blog'>Blog</Link>
             <Link href='/projects'>Project</Link>
         </div>
     </nav>

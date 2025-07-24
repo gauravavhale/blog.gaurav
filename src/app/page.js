@@ -66,15 +66,15 @@ export default function Home() {
         <div className=" items-center w-80 h-45 md:w-100 md:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">SwiftCart</h2>
           <div className="text-sm m-1 mb-4 leading-6">A full-stack e-commerce web application built with React, Next.js, Express, Node.js, JWT, and MongoDB.</div>
-          <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4"> GitHub </Link>
-          <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2"> Live Demo </Link>
+          <Link href={'https://github.com/gauravavhale/e-commerce'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4"> GitHub </Link>
+          <Link href={'https://swift-cart-gaurav-avhales-projects.vercel.app/'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2"> Live Demo </Link>
         </div>
 
         <div className=" items-center w-80 h-45 md:w-100 md:h-40 p-4 m-2 border-2 border-white rounded-2xl">
           <h2 className="text-xl">Personal Portfolio</h2>
           <div className="text-sm m-1 mb-4 leading-6">A fully responsive portfolio website crafted with React, Next.js.</div>
-          <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4"> GitHub </Link>
-          <Link href={'/'} className=" text-sm border-2 p-2 rounded-xl mt-2"> Live Demo </Link>
+          <Link href={'https://github.com/gauravavhale/portfolioo'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4"> GitHub </Link>
+          <Link href={'https://portfolioo-gaurav-avhales-projects.vercel.app/'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2"> Live Demo </Link>
         </div>
 
       </div>
