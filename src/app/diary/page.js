@@ -15,7 +15,7 @@ const Diary = () => {
               This space is for those moments.
           </h2>
           <h2>
-              I never imagined {`I’d`} end up writing a diary on a blog, but 
+              I never imagined I’d end up writing a diary on a blog, but 
               here I am sharing a slice of my real, unfiltered life. No fancy edits, no polished updates. 
               Just raw thoughts and honest reflections.
           </h2>  
@@ -46,8 +46,8 @@ const Diary = () => {
           </div>
           <div>
             After graduating in 2022, something inside me shifted. 
-            I started thinking deeply about where I was heading. {`That’s`} when I realized 
-            a career in tech {`doesn’t`} always need a fancy degree. 
+            I started thinking deeply about where I was heading. That’s when I realized 
+            a career in tech doesn’t always need a fancy degree. 
             What it really needs is curiosity, effort, and the willingness to keep going, even when things get tough.
             So, I decided to go all in.
           </div>
@@ -57,7 +57,7 @@ const Diary = () => {
           <h1>💻 Rebuilding Myself</h1>
           <div>
             Starting from scratch was overwhelming at first. 
-            I {`didn’t`} come from a tech background, and everything felt new 
+            I didn’t come from a tech background, and everything felt new 
             HTML, CSS, JavaScript, React, Node… it was a whole different world. 
             But I was curious, and that curiosity pushed me forward.
           </div>
@@ -77,11 +77,11 @@ const Diary = () => {
         </div>
 
         <div>
-          <h1>💭  Next?</h1>
+          <h1>💭 What’s Next?</h1>
           <div>
             I'm currently applying for developer roles and internships. 
-            {`I won’t pretend it’s easy — the rejections can hurt, and self-doubt sometimes creeps in. 
-            But I’ve`} come too far to stop now.
+            I won’t pretend it’s easy — the rejections can hurt, and self-doubt sometimes creeps in. 
+            But I’ve come too far to stop now.
           </div>
           <div>
             This diary will continue as my journey continues 
@@ -93,19 +93,19 @@ const Diary = () => {
         <div>
           <h1>Rejections That Taught Me More Than Books</h1>
           <div>
-            {`I’ve`} applied to dozens of jobs and internships. 
+            I’ve applied to dozens of jobs and internships. 
             Some never responded, others sent rejections. At first, it crushed me. 
             But then I realized — each “no” made me refine my resume, my portfolio, my code. 
-            And every rejection pushed me one step closer to that one yes {`I’m`} still chasing.
+            And every rejection pushed me one step closer to that one yes I’m still chasing.
           </div>
         </div>
 
         <div>
           <h1>My Personal Blog Is Live!</h1>
           <div>
-            {`The blog you’re reading now is something I’m really proud of. 
-            It's not just a project — it’s my personal space, built with love, lines of code, 
-            and stories from my journey. I hope it inspires someone out there who’s still figuring things out.`}
+            The blog you’re reading now is something I’m really proud of. 
+            It's not just a project — it’s my personal space, built with love, lines of code, and stories from my journey. 
+            I hope it inspires someone out there who’s still figuring things out.
           </div>
         </div>
   
