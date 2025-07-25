@@ -77,7 +77,7 @@ const Diary = () => {
         </div>
 
         <div>
-          <h1>💭 {~} Next?</h1>
+          <h1>💭  Next?</h1>
           <div>
             I'm currently applying for developer roles and internships. 
             {`I won’t pretend it’s easy — the rejections can hurt, and self-doubt sometimes creeps in. 
