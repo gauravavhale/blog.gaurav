@@ -13,7 +13,7 @@ export const Navbar = () => {
             <Link href='/'>Home</Link>
             <Link href='/about'>About</Link>
             <Link href='/blog'>Blog</Link>
-            <Link href='/contact'>My Journey</Link>
+            <Link href='/diary'>Diary</Link>
         </div>
     </nav>
   )
