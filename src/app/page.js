@@ -1,6 +1,34 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+
+const blogList = [
+  {
+    slug: 'react-hooks-guide',
+    title: 'Mastering React Hooks',
+    date: 'April 18, 2024',
+    summary: 'A complete guide to React Hooks including useState, useEffect, useContext, and custom hooks.',
+  },
+  {
+    slug: 'mongodb-mongoose-guide',
+    title: 'MongoDB & Mongoose Guide',
+    date: 'May 5, 2024',
+    summary: 'Learn how to connect MongoDB with Mongoose, define schemas, and perform CRUD operations.',
+  },
+  {
+    slug: 'tailwind-css-tips',
+    title: 'Tailwind CSS Tips',
+    date: 'May 12, 2024',
+    summary: 'Pro tips for using Tailwind CSS like @apply, responsive utilities, dark mode, and plugin support.',
+  },
+  {
+    slug: 'git-tips-every-dev',
+    title: 'Git Tips Every Developer Should Know',
+    date: 'June 10, 2024',
+    summary: 'Essential Git commands and techniques to improve version control, workflows, and productivity.',
+  },
+];
 
 export default function Home() {
   return (
@@ -27,33 +55,20 @@ export default function Home() {
       <h2 className="text-center mb-6 text-2xl font-bold">Latest Projects</h2> 
       <div className="flex flex-col items-center gap-2 md:flex-row justify-center">
 
-        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
-          <h2 className="text-xl">Javascript Tips and Tricks</h2>
-          <div className="text-sm m-1"> April 19 2024 </div>
-          <div className="text-sm m-1">Javascript Tips and Tricks</div>
-          <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
-        </div> 
-
-        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl ">
-          <h2 className="text-xl">Javascript Tips and Tricks</h2>
-          <div className="text-sm m-1"> April 19 2024 </div>
-          <div className="text-sm m-1">Javascript Tips and Tricks</div>
-          <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
-        </div>
-
-        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
-          <h2 className="text-xl">Javascript Tips and Tricks</h2>
-          <div className="text-sm m-1"> April 19 2024 </div>
-          <div className="text-sm m-1">Javascript Tips and Tricks</div>
-          <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
-        </div>
-
-        <div className=" items-center w-70 h-40 md:h-55 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
-          <h2 className="text-xl">Javascript Tips and Tricks</h2>
-          <div className="text-sm m-1"> April 19 2024 </div>
-          <div className="text-sm m-1">Javascript Tips and Tricks</div>
-          <button className=" text-sm border-2 p-2 rounded-xl mt-2"> Read More </button>
-        </div>
+        { blogList.map((blog)=>{
+          return (
+          <div key={blog.slug} className=" items-center w-70 h-40 md:h-40 lg:h-40 p-4 m-2 border-2 border-white rounded-2xl">
+          <h2 className="text-xl line-clamp-1">{blog.title}</h2>
+          <div className="text-sm m-1"> {blog.date} </div>
+          <div className="text-sm m-1 line-clamp-1">{blog.summary}</div>
+          <Link href={`/blog/${blog.slug}`} className="inline-block">
+           <div className="text-sm border-2 p-2 rounded-xl mt-2">
+              Read More 
+           </div>
+           </Link>
+          </div> 
+          )
+        }) }
 
       </div>
     </div>
