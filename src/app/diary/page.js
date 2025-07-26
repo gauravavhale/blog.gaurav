@@ -3,14 +3,14 @@ import React from 'react'
 
 const Diary = () => {
   return (
-    <div className='min-h-screen flex justify-center mt-20 p-5'>
+    <div className='min-h-screen flex flex-col justify-center mt-15'>
 
-      <div className='text-center w-full md:w-[70vw]'>
+      <div className='text-left w-full md:w-[70vw] p-5 '>
 
-        <div>
-          <h1>📖 Dear Diary</h1>
+        <div className=' border-b-2 border-gray-700 pb-4'>
+          <h1 className='font-bold text-xl mb-4'>📖 Dear Diary</h1>
           <h2>{`There are moments in life that never make it to social media, 
-              but they live deeply in our memories — quiet thoughts, small victories, 
+              but they live deeply in our memories quiet thoughts, small victories, 
               little disappointments, and everything in between. 
               This space is for those moments.`}
           </h2>
@@ -21,8 +21,8 @@ const Diary = () => {
           </h2>  
         </div>
 
-        <div>
-          <h1>🌱 Where I Started</h1>
+        <div className=' border-b-2 border-gray-700 pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>🌱 Where I Started</h1>
           <h2>{`I was born and raised in Chhatrapati Sambhajinagar 
               a quiet, observant kid who mostly kept to himself, 
               surrounded by a few close friends and a head full of dreams. 
@@ -37,8 +37,8 @@ const Diary = () => {
           </h2>
         </div>
               
-        <div>
-          <h1>🔄 Turning Point</h1>
+        <div className=' border-b-2 border-gray-700 pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>🔄 Turning Point</h1>
           <div>
             {`During the lockdown, everything slowed down — including my thoughts and plans. 
             I had a lot of time on my hands, but no clear idea of what to do next. 
@@ -53,8 +53,8 @@ const Diary = () => {
           </div>
         </div>
 
-        <div>
-          <h1>💻 Rebuilding Myself</h1>
+        <div className=' border-b-2 border-gray-700 pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>💻 Rebuilding Myself</h1>
           <div>
            {` Starting from scratch was overwhelming at first. 
             I didn’t come from a tech background, and everything felt new 
@@ -76,8 +76,8 @@ const Diary = () => {
           </div>
         </div>
 
-        <div>
-          <h1>💭 What&rsquo;s Next?</h1>
+        <div className=' border-b-2 border-gray-700 pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>💭 What&rsquo;s Next?</h1>
           <div>
             {`I'm currently applying for developer roles and internships. 
             I won’t pretend it’s easy — the rejections can hurt, and self-doubt sometimes creeps in. 
@@ -90,8 +90,8 @@ const Diary = () => {
           </div>
         </div>
 
-        <div>
-          <h1>Rejections That Taught Me More Than Books</h1>
+        <div className=' border-b-2 border-gray-700 pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>Rejections That Taught Me More Than Books</h1>
           <div>
             {`I’ve applied to dozens of jobs and internships. 
             Some never responded, others sent rejections. At first, it crushed me. 
@@ -100,8 +100,8 @@ const Diary = () => {
           </div>
         </div>
 
-        <div>
-          <h1>My Personal Blog Is Live!</h1>
+        <div className='  pb-4 mt-5'>
+          <h1 className='font-bold text-xl mb-4'>My Personal Blog Is Live!</h1>
           <div>
             {`The blog you’re reading now is something I’m really proud of. 
             It's not just a project — it’s my personal space, built with love, lines of code, and stories from my journey. 
