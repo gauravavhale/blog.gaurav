@@ -30,7 +30,7 @@ const about = () => {
 
           <div className='mt-10'>
             <h2 className='text-2xl'>Skills</h2>
-            <div className='container border-2 rounded-xl border-white mt-4 p-4'>
+            <div className='container border-2 rounded-xl border-[#2a2a2a] mt-4 p-4'>
               <div className='flex flex-wrap gap-3 max-w-[70vw] content-center justify-center'>
                   <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiJavascript className='text-yellow-300' /> JavaScript</span>
                   <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiTailwindcss className='text-blue-400' /> Tailwind CSS</span>

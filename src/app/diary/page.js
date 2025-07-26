@@ -3,7 +3,7 @@ import React from 'react'
 
 const Diary = () => {
   return (
-    <div className='min-h-screen flex flex-col justify-center mt-15'>
+    <div className='min-h-screen mt-15 md:flex md:justify-center'>
 
       <div className='text-left w-full md:w-[70vw] p-5 '>
 
@@ -100,7 +100,7 @@ const Diary = () => {
           </div>
         </div>
 
-        <div className='  pb-4 mt-5'>
+        <div className=' pb-4 mt-5'>
           <h1 className='font-bold text-xl mb-4'>My Personal Blog Is Live!</h1>
           <div>
             {`The blog you’re reading now is something I’m really proud of. 

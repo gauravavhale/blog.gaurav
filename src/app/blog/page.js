@@ -50,7 +50,7 @@ const Blog = () => {
             {blogList.map((post)=>{
             return (
                 <Link key={post.slug} href={`/blog/${post.slug}`} className='w-full sm:w-[75vw] md:w-[67vw] lg:w-[35vw]'>
-                <div className='flex border-2 w-full sm:w-full sm:h-15 md:w-140 md:h-25 rounded-xl'>
+                <div className='flex border-2 border-[#2a2a2a] w-full sm:w-full sm:h-15 md:w-140 md:h-25 rounded-xl'>
                 <div className=' w-1/3 p-4'>
                     {post.date} 
                 </div>
