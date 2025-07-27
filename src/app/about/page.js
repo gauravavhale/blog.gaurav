@@ -20,30 +20,30 @@ const about = () => {
 
           <div className="sm:text-xl md:text-xl text-center mt-6 px-4 md:px-10 lg:px-32 text-gray-300 leading-relaxed">
               <h2 className="text-xl md:text-3xl font-semibold text-white mb-4">
-                I'm a full-stack developer based in Pune, India.
+                {`I'm `}a full-stack developer based in Pune, India.
                 <br />
                 I enjoy building web applications and learning new technologies.
               </h2>
               
               <h2 className="text-lg sm:text-xl md:text-2xl font-medium mt-6 mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-transparent bg-clip-text">
-                "An Arts Graduate Navigating the Tech World"
+                {`"An Arts Graduate Navigating the Tech World"`}
                 <br />
-                "One Line of Code at a Time."
+                {`"One Line of Code at a Time."`}
               </h2>
 
               <p className="text-base sm:text-lg text-gray-400">
                 My background might not be in Computer Science,
                 but my curiosity for how things work on the web led me here.
                 <br />
-                I started with zero experience — just a spark of interest —
-                and now I'm diving deep into web development,
+                I started with zero experience just a spark of interest
+                and now {`I'm`} diving deep into web development,
                 building projects with <span className="text-white font-semibold">React</span>, <span className="text-white font-semibold">Next.js</span>,
                 and exploring the magic of <span className="italic text-purple-300">clean UI</span>.
               </p>
           </div>
 
           <div className="mt-8 text-sm text-gray-400">
-                Curious about my personal journey ?{" "}
+                Curious about my personal journey ?
               <Link href="/diary" className="text-purple-400 underline hover:text-purple-300 transition duration-300">
                 Diary 📖
               </Link>
@@ -76,12 +76,3 @@ const about = () => {
 }
 
 export default about
-
-
-
-
-{/* <h1 className="text-cyan-300">No Tech Degree. Just Pure Dedication and Passion for Coding.</h1>
-        <h3>Join me on my journey as I share my experiences, challenges, and triumphs in the world of web development.
-            From coding tutorials to personal insights, this blog is a reflection of my growth as a developer and my love for technology.
-            {`Let's`} explore the fascinating world of coding together! 
-        </h3> */}
