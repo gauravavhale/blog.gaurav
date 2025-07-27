@@ -4,6 +4,7 @@ import { SiJavascript, SiTailwindcss, SiBootstrap, SiRedux, SiNextdotjs, SiReact
 import { FaMobileAlt } from 'react-icons/fa';
 import { BiLockAlt } from 'react-icons/bi'; // for JWT
 import { LiaFileCodeSolid } from 'react-icons/lia'; // for Rest API
+import Link from 'next/link';
 
 
 const about = () => {
@@ -17,15 +18,35 @@ const about = () => {
             <Image src="/images/avatar3.png" width={100} height={100} alt='avatar'></Image>
           </div>
 
-          <div className='sm:text-xl md:text-xl text-center mt-1'>
-            <h2> {`I'm`} a full-stack developer based in Pune, India.<br/>
-                   I enjoy building web application and learn new technologies</h2>
-            <h2 className="text-purple-300 mt-5 mb-4">{`"An Arts Graduate Navigating the Tech World `}<br/>{` One Line of Code at a Time."`}</h2>
-            <p>My background might not be in Computer Science, 
-              but my curiosity for how things work on the web led me here.<br/> 
-              I started with zero experience, just a spark of interest
-              and now <br/> {`I'm`} diving deep into web development, building 
-              projects with React, Next.js, and exploring the magic of clean UI.</p>
+          <div className="sm:text-xl md:text-xl text-center mt-6 px-4 md:px-10 lg:px-32 text-gray-300 leading-relaxed">
+              <h2 className="text-xl md:text-3xl font-semibold text-white mb-4">
+                I'm a full-stack developer based in Pune, India.
+                <br />
+                I enjoy building web applications and learning new technologies.
+              </h2>
+              
+              <h2 className="text-lg sm:text-xl md:text-2xl font-medium mt-6 mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 text-transparent bg-clip-text">
+                "An Arts Graduate Navigating the Tech World"
+                <br />
+                "One Line of Code at a Time."
+              </h2>
+
+              <p className="text-base sm:text-lg text-gray-400">
+                My background might not be in Computer Science,
+                but my curiosity for how things work on the web led me here.
+                <br />
+                I started with zero experience — just a spark of interest —
+                and now I'm diving deep into web development,
+                building projects with <span className="text-white font-semibold">React</span>, <span className="text-white font-semibold">Next.js</span>,
+                and exploring the magic of <span className="italic text-purple-300">clean UI</span>.
+              </p>
+          </div>
+
+          <div className="mt-8 text-sm text-gray-400">
+                Curious about my personal journey ?{" "}
+              <Link href="/diary" className="text-purple-400 underline hover:text-purple-300 transition duration-300">
+                Diary 📖
+              </Link>
           </div>
 
           <div className='mt-10'>

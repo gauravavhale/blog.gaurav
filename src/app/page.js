@@ -42,10 +42,23 @@ export default function Home() {
          </div>
       </div>
       <div className="w-full md:w-1/2">
-        <h1 className="text-xl leading-8 md:text-2xl md:leading-10 lg:text-3xl lg:leading-12">{`Hey, I'm Gaurav `}<br/>
-          a full-stack developer sharing<br/> 
-          my tech journey<br/>
-          in web development.</h1>        
+        <h1 className="font-extrabold text-2xl leading-tight sm:text-3xl sm:leading-snug md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight text-white">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600">
+          {`Hey, I'm Gaurav `}
+          </span>
+          <br/>
+          <span className="text-gray-300 font-semibold">
+            a full-stack developer sharing
+          </span>
+          <br/> 
+          <span className="text-gray-400">
+            my tech journey
+          </span>
+          <br/>
+          <span className="text-gray-500">
+            in web development.
+          </span>
+        </h1>        
       </div>
     </div>
 

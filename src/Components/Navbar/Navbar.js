@@ -15,24 +15,27 @@ export const Navbar = () => {
   ]
 
   return (
-    <nav className='fixed top-0 z-50 bg-[#121212] flex  items-center p-4 border-b border-white w-[100vw] pr-[12px] sm-pr[16px] md:pr-[100px] lg:pr-[200px]'>
-        <div className='text-sm sm:text-sm md:text-lg lg:text-xl font-bold bg-[linear-gradient(288deg,_#ff8000,_#f0c_53.2394%,_#04f)] text-transparent bg-clip-text'>
-            <Link href="https://www.linkedin.com/in/gaurav-avhale-631690313/"  target='_blank' >gaurav.dev</Link>
+    <nav className="fixed top-0 z-50 w-full bg-[#121212] border-b border-gray-800 flex items-center px-4 py-3 sm:px-6 md:px-20 lg:px-32 shadow-md">
+        
+        <div className="text-lg sm:text-xl font-extrabold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
+          <Link href="https://www.linkedin.com/in/gaurav-avhale-631690313/" target="_blank">
+            gaurav.dev
+          </Link>
         </div>
-        <div className='flex ml-auto justify-between gap-x-4 md:gap-x-12 '>
-        {
-          navLinks.map((nav)=>{
-            return(
-              <Link href={nav.href} key={nav.label} 
-               className={`transition-all duration-300 ease-in-out
-                ${ pathname == nav.href ? ' text-[#666666] font-bold ' : 'text-white'} `}
-              >
-                {nav.label}
-              </Link> 
-            )
-          })
-        }
-         </div>
+
+        
+        <div className="flex ml-auto gap-x-4 sm:gap-x-6 md:gap-x-10">
+          {navLinks.map((nav) => (
+            <Link
+              href={nav.href}
+              key={nav.label}
+              className={`text-sm md:text-base transition-all duration-300 ease-in-out hover:text-white
+                ${pathname === nav.href ? 'text-white font-semibold' : 'text-gray-400 hover:underline'}`}
+            >
+              {nav.label}
+            </Link>
+          ))}
+        </div>
     </nav>
   )
 }
