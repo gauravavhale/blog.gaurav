@@ -34,14 +34,20 @@ export default function Home() {
   return (
     <div className='mb-10 mt-25 md:mt-30 min-h-[80vh] max-w-[100vw]'>
     
-    {/* Intro */}
     <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-6 ">
-      <div className="w-full md:w-1/2 flex justify-center ">
-         <div className="w-[200px] h-[200px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px]   m-0 md:ml-0 lg:ml-100">
-            <Image src="/images/avatar3.png"  width={300} height={300} className="object-cover w-full h-full" alt="avatar"></Image>
-         </div>
+      <div className="w-full md:w-1/3 flex justify-center md:justify-end items-center">
+          <div className="w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden shadow-lg border border-gray-700">
+            <Image
+              src="/images/avatar3.png"
+              width={300}
+              height={300}
+              className="object-cover w-full h-full"
+              alt="avatar"
+            />
+          </div>
       </div>
-      <div className="w-full md:w-1/2">
+
+      <div className="w-full md:w-2/3">
         <h1 className="font-extrabold text-2xl leading-tight sm:text-3xl sm:leading-snug md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight text-white">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600">
           {`Hey, I'm Gaurav `}
@@ -63,51 +69,85 @@ export default function Home() {
     </div>
 
 
-    {/* Latest Project */}
-    <div className="mt-7 md:mt-15 mb-10">
-      <h2 className="text-center mb-6 text-2xl font-bold">Latest Blog</h2> 
-      <div className="flex flex-col items-center gap-2 md:flex-row justify-center">
+<div className="mt-10 md:mt-20 mb-16">
+  <h2 className="text-center mb-8 text-3xl font-bold text-white">Latest Blog</h2> 
+  <div className="flex flex-col md:flex-row justify-center items-center gap-6 flex-wrap px-4">
 
-        { blogList.map((blog)=>{
-          return (
-          <div key={blog.slug} className="bg-[#1e1e1e] hover:bg-[#252525] items-center w-70 h-40 md:h-40 lg:h-40 p-4 m-2 border-2 border-[#2a2a2a] rounded-2xl">
-          <h2 className="text-xl line-clamp-1">{blog.title}</h2>
-          <div className="text-sm m-1"> {blog.date} </div>
-          <div className="text-sm m-1 line-clamp-1">{blog.summary}</div>
-            <Link href={`/blog/${blog.slug}`} className="inline-block ">
-              <div className="text-sm border-2 border-[#2a2a2a]  p-2 rounded-xl mt-2">
-                Read More 
-              </div>
-            </Link>
-          </div> 
-          )
-        }) }
+    {blogList.map((blog) => (
+      <div
+        key={blog.slug}
+        className="bg-[#1e1e1e] hover:bg-[#252525] w-[90vw] sm:w-[75vw] md:w-[40vw] lg:w-[30vw] p-5 border border-[#2a2a2a] rounded-2xl transition-all duration-300"
+      >
+        <h2 className="text-xl font-semibold text-white line-clamp-1">{blog.title}</h2>
+        <div className="text-sm text-gray-400 my-1">{blog.date}</div>
+        <div className="text-sm text-gray-300 line-clamp-2">{blog.summary}</div>
+        <Link href={`/blog/${blog.slug}`} className="inline-block mt-4">
+          <div className="text-sm text-white border border-[#444] hover:bg-[#333] px-4 py-2 rounded-xl transition">
+            Read More
+          </div>
+        </Link>
+      </div>
+    ))}
 
+  </div>
+</div>
+
+<div className="mb-10">
+  <h2 className="text-center mb-8 text-3xl font-bold text-white">Featured Projects</h2>
+  <div className="flex flex-col md:flex-row justify-center items-center gap-6 flex-wrap px-4">
+
+    <div className="bg-[#1e1e1e] hover:bg-[#252525] w-[90vw] sm:w-[75vw] md:w-[40vw] lg:w-[30vw] p-5 border border-[#2a2a2a] rounded-2xl transition-all duration-300">
+      <h2 className="text-xl font-semibold text-white">SwiftCart</h2>
+      <p className="text-sm text-gray-300 mt-2 mb-4 leading-6">
+        A full-stack e-commerce web application built with React, Next.js, Express, Node.js, JWT, and MongoDB.
+      </p>
+      <div className="flex gap-3">
+        <Link
+          href="https://github.com/gauravavhale/e-commerce"
+          target="_blank"
+          className="text-sm border border-[#444] text-white hover:bg-[#333] px-4 py-2 rounded-xl transition"
+        >
+          GitHub
+        </Link>
+        <Link
+          href="https://swift-cart-gaurav-avhales-projects.vercel.app/"
+          target="_blank"
+          className="text-sm border border-[#444] text-white hover:bg-[#333] px-4 py-2 rounded-xl transition"
+        >
+          Live Demo
+        </Link>
       </div>
     </div>
 
-    {/* Featured Prodcuts */}
-    <div>
-      <h2 className="text-center mb-6 text-2xl font-bold">Featured Projects</h2>
-      <div className="flex flex-col items-center gap-2 md:flex-row justify-center">
-
-        <div className="bg-[#1e1e1e] hover:bg-[#252525] items-center w-80 h-45 md:w-100 md:h-40 p-4 m-2 border-2 border-[#2a2a2a] rounded-2xl">
-          <h2 className="text-xl">SwiftCart</h2>
-          <div className="text-sm m-1 mb-4 leading-6">A full-stack e-commerce web application built with React, Next.js, Express, Node.js, JWT, and MongoDB.</div>
-          <Link href={'https://github.com/gauravavhale/e-commerce'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4 border-[#2a2a2a]"> GitHub </Link>
-          <Link href={'https://swift-cart-gaurav-avhales-projects.vercel.app/'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 border-[#2a2a2a]"> Live Demo </Link>
-        </div>
-
-        <div className="bg-[#1e1e1e] hover:bg-[#252525] items-center w-80 h-45 md:w-100 md:h-40 p-4 m-2 border-2 border-[#2a2a2a] rounded-2xl">
-          <h2 className="text-xl">Personal Portfolio</h2>
-          <div className="text-sm m-1 mb-4 leading-6">A fully responsive portfolio website crafted with React, Next.js.</div>
-          <Link href={'https://github.com/gauravavhale/portfolioo'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 mr-4 border-[#2a2a2a]"> GitHub </Link>
-          <Link href={'https://portfolioo-gaurav-avhales-projects.vercel.app/'} target="_blank" className=" text-sm border-2 p-2 rounded-xl mt-2 border-[#2a2a2a]"> Live Demo </Link>
-        </div>
-
+    <div className="bg-[#1e1e1e] hover:bg-[#252525] w-[90vw] sm:w-[75vw] md:w-[40vw] lg:w-[30vw] p-5 border border-[#2a2a2a] rounded-2xl transition-all duration-300">
+      <h2 className="text-xl font-semibold text-white">Personal Portfolio</h2>
+      <p className="text-sm text-gray-300 mt-2 mb-4 leading-6">
+        A fully responsive portfolio website crafted with React and Next.js. It showcases my projects, skills, and journey as a developer.
+      </p>
+      <div className="flex gap-3">
+        <Link
+          href="https://github.com/gauravavhale/portfolioo"
+          target="_blank"
+          className="text-sm border border-[#444] text-white hover:bg-[#333] px-4 py-2 rounded-xl transition"
+        >
+          GitHub
+        </Link>
+        <Link
+          href="https://portfolioo-gaurav-avhales-projects.vercel.app/"
+          target="_blank"
+          className="text-sm border border-[#444] text-white hover:bg-[#333] px-4 py-2 rounded-xl transition"
+        >
+          Live Demo
+        </Link>
       </div>
-      <div className="m-10 text-center text-sm">Currently diving into GraphQL - follow along</div>
     </div>
+  </div>
+
+  <div className="text-center text-sm text-purple-300 mt-10">
+    Currently diving into GraphQL - follow along!
+  </div>
+</div>
+
 
 
     </div>

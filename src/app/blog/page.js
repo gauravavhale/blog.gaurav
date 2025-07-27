@@ -42,31 +42,42 @@ const blogList = [
 
 const Blog = () => {
   return (
-    <div className='mb-10 mt-15 mx-auto' style={{minHeight:"80vh"}}>
-        <div className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>Blog</div>
+    <div className="mb-16 mt-20 mx-auto px-4" style={{ minHeight: '80vh' }}>
+      
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-white mb-10 text-center">
+        Blog
+      </h1>
 
-        <div className='flex flex-col items-center gap-4 pt-10 pr-5 pl-5'>
+      <div className="flex flex-col items-center gap-6">
 
-            {blogList.map((post)=>{
-            return (
-                <Link key={post.slug} href={`/blog/${post.slug}`} className='w-full sm:w-[75vw] md:w-[67vw] lg:w-[35vw]'>
-                <div className='flex border-2 border-[#2a2a2a] w-full sm:w-full sm:h-15 md:w-140 md:h-25 rounded-xl'>
-                <div className=' w-1/3 p-4'>
-                    {post.date} 
-                </div>
-                <div className=' w-2/3 p-4'>
-                    <h4 className='font-bold mb-3 md:mb-4'>{post.title}</h4>
-                    <p className='line-clamp-1'>{post.summary}</p>
-                </div>
-                </div>
-                </Link>
-            )
-            })}
+        {blogList.map((post) => (
+          <Link
+            key={post.slug}
+            href={`/blog/${post.slug}`}
+            className="w-full sm:w-[75vw] md:w-[67vw] lg:w-[40vw] transition-transform duration-300 hover:scale-[1.015]"
+          >
+            <div className="flex flex-col sm:flex-row border border-gray-700 bg-[#1e1e1e] hover:bg-[#252525] shadow-md rounded-xl overflow-hidden">
+              
+              <div className="sm:w-1/3 p-4 border-b sm:border-b-0 sm:border-r border-gray-700 text-sm text-purple-400 font-medium">
+                {post.date}
+              </div>
 
-        </div>
-
+              <div className="sm:w-2/3 p-4">
+                <h4 className="text-lg font-semibold text-white mb-2">
+                  {post.title}
+                </h4>
+                <p className="text-gray-400 line-clamp-2 text-sm">
+                  {post.summary}
+                </p>
+              </div>
+            </div>
+          </Link>
+        ))}
+        
+      </div>
     </div>
-  )
-}
+  );
+};
+
 
 export default Blog

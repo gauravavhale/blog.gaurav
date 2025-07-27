@@ -7,7 +7,6 @@ const Diary = () => {
 
       <div className="w-full md:w-[70vw] space-y-12">
 
-        {/* Section Block */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">📖 Dear Diary</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -18,7 +17,6 @@ const Diary = () => {
           </p>
         </section>
 
-        {/* Where I Started */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">🌱 Where I Started</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -29,7 +27,6 @@ const Diary = () => {
           </p>
         </section>
 
-        {/* Turning Point */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">🔄 Turning Point</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -39,7 +36,6 @@ const Diary = () => {
             {`After graduating in 2022, something inside me shifted. I started thinking deeply about where I was heading. That’s when I realized a career in tech doesn’t always need a fancy degree. What it really needs is curiosity, effort, and the willingness to keep going, even when things get tough. So, I decided to go all in.`}          </p>
         </section>
 
-        {/* Rebuilding Myself */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">💻 Rebuilding Myself</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -53,7 +49,6 @@ const Diary = () => {
           </p>
         </section>
 
-        {/* What's Next */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">{`💭 What’s Next?`}</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -64,7 +59,6 @@ const Diary = () => {
           </p>
         </section>
 
-        {/* Rejections */}
         <section className="border-b border-gray-700 pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">❌ Rejections That Taught Me More Than Books</h1>
           <p className="text-gray-400 leading-relaxed">
@@ -72,7 +66,6 @@ const Diary = () => {
           </p>
         </section>
 
-        {/* Personal Blog */}
         <section className="pb-6">
           <h1 className="text-2xl font-bold text-white mb-3">🌐 My Personal Blog Is Live!</h1>
           <p className="text-gray-400 leading-relaxed">

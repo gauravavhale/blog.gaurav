@@ -18,7 +18,7 @@ export const Navbar = () => {
     <nav className="fixed top-0 z-50 w-full bg-[#121212] border-b border-gray-800 flex items-center px-4 py-3 sm:px-6 md:px-20 lg:px-32 shadow-md">
         
         <div className="text-lg sm:text-xl font-extrabold bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-transparent bg-clip-text">
-          <Link href="https://www.linkedin.com/in/gaurav-avhale-631690313/" target="_blank">
+          <Link href="https://portfolioo-gaurav-avhales-projects.vercel.app/" target="_blank">
             gaurav.dev
           </Link>
         </div>

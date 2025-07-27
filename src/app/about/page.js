@@ -10,13 +10,25 @@ import Link from 'next/link';
 const about = () => {
   return (
     <div className=' mb-10 pb-5 pr-5 pl-5 mt-15' style={{minHeight:"80vh"}}>
-        <h2 className='text-4xl pt-10 pl-5 md:ml-[125px] lg:ml-[465px]'>About</h2>
+
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-white pt-10 pl-5 md:ml-[125px] lg:ml-[465px]">
+        About
+        </h1>
         
         <div className='flex flex-col items-center'>
 
-          <div >
-            <Image src="/images/avatar3.png" width={100} height={100} alt='avatar'></Image>
+          <div className="w-full flex justify-center items-center">
+              <div className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] rounded-full overflow-hidden border-2 border-gray-700 shadow-md">
+                <Image
+                  src="/images/avatar3.png"
+                  width={200}
+                  height={200}
+                  alt="avatar"
+                  className="object-cover w-full h-full"
+                />
+              </div>
           </div>
+
 
           <div className="sm:text-xl md:text-xl text-center mt-6 px-4 md:px-10 lg:px-32 text-gray-300 leading-relaxed">
               <h2 className="text-xl md:text-3xl font-semibold text-white mb-4">
@@ -45,7 +57,7 @@ const about = () => {
           <div className="mt-8 text-sm text-gray-400">
                 Curious about my personal journey ?
               <Link href="/diary" className="text-purple-400 underline hover:text-purple-300 transition duration-300">
-                Diary 📖
+                 Diary 📖
               </Link>
           </div>
 
@@ -53,7 +65,7 @@ const about = () => {
             <h2 className='text-2xl'>Skills</h2>
             <div className='container border-2 rounded-xl border-[#2a2a2a] mt-4 p-4'>
               <div className='flex flex-wrap gap-3 max-w-[70vw] content-center justify-center'>
-                  <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiJavascript className='text-yellow-300' /> JavaScript</span>
+                  <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100 '><SiJavascript className='text-yellow-300' /> JavaScript</span>
                   <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiTailwindcss className='text-blue-400' /> Tailwind CSS</span>
                   <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiBootstrap className='text-purple-500' /> Bootstrap</span>
                   <span className='flex items-center gap-2 border border-white p-2 rounded-xl text-black bg-gray-100'><SiRedux /> Redux</span>

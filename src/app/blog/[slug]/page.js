@@ -338,12 +338,18 @@ export default async function BlogPost({ params }) {
   if (!post) return <div className="p-10">Post not found.</div>;
 
   return (
-    <div className="min-h-screen w-full mt-20 flex justify-center">
-      <div className="p-6 md:p-10 w-full md:w-[50vw]">
-        <h1 className="text-2xl font-bold mb-4">{post.title}</h1>
-        <p className="text-gray-500 mb-2">{post.date}</p>
-        <div className="whitespace-pre-line">{post.content}</div>
+  <div className="min-h-screen w-full mt-20 mb-10 flex justify-center px-4 text-gray-300">
+    <div className="p-6 md:p-10 w-full md:w-[50vw] bg-[#1a1a1a] rounded-2xl shadow-lg border border-gray-700">
+      <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-snug">
+        {post.title}
+      </h1>
+      <p className="text-sm text-purple-400 mb-6 font-medium">{post.date}</p>
+
+      <div className="whitespace-pre-line text-base md:text-lg leading-relaxed text-gray-300">
+        {post.content}
       </div>
     </div>
-  );
+  </div>
+);
+
 }
