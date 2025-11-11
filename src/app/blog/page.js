@@ -3,39 +3,63 @@ import Link from 'next/link';
 
 const blogList = [
   {
+    slug: 'react-server-vs-client-components',
+    title: 'React Server vs Client Components',
+    date: 'November 11, 2025',
+    summary: 'Understanding the difference between Server Components and Client Components in Next.js when to use what and why it matters.',
+  },
+  {
+    slug: 'mern-auth-jwt-guide',
+    title: 'MERN Authentication With JWT',
+    date: 'October 12, 2025',
+    summary: 'A clear guide to implementing secure authentication using JWT, Refresh Tokens, Cookies, and Protected Routes.',
+  },
+  {
+    slug: 'nextjs-deployment-to-vercel',
+    title: 'Deploying Next.js App to Vercel',
+    date: 'September 20, 2025',
+    summary: 'Step-by-step process to deploy your Next.js project to Vercel with environment variables and build optimizations.',
+  },
+  {
+    slug: 'how-i-built-wanderlust',
+    title: 'How I Built WanderLust Travel Hub',
+    date: 'August 5, 2025',
+    summary: 'The full breakdown of designing, structuring, and deploying the WanderLust Travel Hub project from scratch.',
+  },
+  {
     slug: 'javascript-tips',
     title: 'JavaScript Tips and Tricks',
-    date: 'April 10, 2024',
+    date: 'April 10, 2025',
     summary: 'Clean and efficient JavaScript tips like optional chaining, destructuring, async/await, and more.',
   },
   {
     slug: 'react-hooks-guide',
     title: 'Mastering React Hooks',
-    date: 'April 18, 2024',
+    date: 'January 18, 2025',
     summary: 'A complete guide to React Hooks including useState, useEffect, useContext, and custom hooks.',
   },
   {
     slug: 'mongodb-mongoose-guide',
     title: 'MongoDB & Mongoose Guide',
-    date: 'May 5, 2024',
+    date: 'December 5, 2024',
     summary: 'Learn how to connect MongoDB with Mongoose, define schemas, and perform CRUD operations.',
   },
   {
     slug: 'tailwind-css-tips',
     title: 'Tailwind CSS Tips',
-    date: 'May 12, 2024',
+    date: 'December 2, 2024',
     summary: 'Pro tips for using Tailwind CSS like @apply, responsive utilities, dark mode, and plugin support.',
   },
   {
     slug: 'nextjs-app-router',
     title: 'Next.js App Router Guide',
-    date: 'June 1, 2024',
+    date: 'December 1, 2024',
     summary: 'Understand the new App Router in Next.js with layouts, dynamic routes, and server components.',
   },
   {
     slug: 'git-tips-every-dev',
     title: 'Git Tips Every Developer Should Know',
-    date: 'June 10, 2024',
+    date: 'November 10, 2024',
     summary: 'Essential Git commands and techniques to improve version control, workflows, and productivity.',
   },
 ];

@@ -20,7 +20,7 @@ const about = () => {
           <div className="w-full flex justify-center items-center">
               <div className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] md:w-[200px] md:h-[200px] rounded-full overflow-hidden border-2 border-gray-700 shadow-md">
                 <Image
-                  src="/images/avatar3.png"
+                  src="/images/avatar.png"
                   width={200}
                   height={200}
                   alt="avatar"

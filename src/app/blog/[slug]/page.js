@@ -323,11 +323,150 @@ const blogPosts = {
         Example:
           git cherry-pick <commit-hash>
 
-    🚀 Once you’re comfortable with Git, version control becomes a superpower — not a source of stress.
+    🚀 Once you’re comfortable with Git, version control becomes a superpower not a source of stress.
+  `,
+},
+'react-server-vs-client-components': {
+  title: 'React Server vs Client Components',
+  date: 'September 30, 2024',
+  content: `
+    With the release of Next.js App Router, React introduced a powerful new concept:
+    Server Components and Client Components. Understanding when to use each is key
+    to building efficient modern web apps.
+
+    🧱 Server Components:
+    - Rendered on the server.
+    - Do NOT ship JavaScript to the browser.
+    - Great for data fetching, heavy computations, or static UI.
+    - Cannot use useState, useEffect, or event handlers.
+    
+    Example:
+      // This is server by default
+      export default function Page() {
+        const data = await getData();
+        return <div>{data.title}</div>;
+      }
+
+    🎨 Client Components:
+    - Render in the user’s browser.
+    - Used for interactive UI: buttons, forms, animations, stateful logic.
+    - Must include 'use client' at the top.
+    
+    Example:
+      'use client'
+      import { useState } from 'react';
+
+      export default function Counter() {
+        const [count, setCount] = useState(0);
+        return <button onClick={() => setCount(count + 1)}>{count}</button>;
+      }
+
+    🧠 Rule of Thumb:
+    - Use *Server Components* for UI that does not need interaction.
+    - Use *Client Components* only when needed (state, forms, events).
+
+    This split makes apps faster, lighter, and more scalable.
   `,
 },
 
-  // Add more posts here
+'mern-auth-jwt-guide': {
+  title: 'MERN Authentication With JWT',
+  date: 'October 12, 2024',
+  content: `
+    Authentication is a core part of any MERN app. JSON Web Tokens (JWT) make it possible 
+    to authenticate users securely without storing session state on the server.
+
+    🔐 Flow:
+    1. User logs in → Server verifies credentials.
+    2. Server generates JWT and sends it to the client.
+    3. Client stores JWT (httpOnly cookie recommended).
+    4. Protected routes verify JWT before allowing access.
+    
+    Example (Generate Token):
+      const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '7d' });
+
+    Example (Verify Token):
+      const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    🧊 Refresh Tokens:
+    - Used to avoid logging users out when access tokens expire.
+    - Store refresh tokens securely in database.
+
+    ✅ Best Practices:
+    - Store JWT in httpOnly cookie (prevents XSS attacks).
+    - Use bcrypt for password hashing.
+    - Always validate input on backend.
+    - Implement logout by clearing cookie.
+
+    With this setup, your authentication becomes secure and scalable.
+  `,
+},
+
+'nextjs-deployment-to-vercel': {
+  title: 'Deploying Next.js App to Vercel',
+  date: 'October 20, 2024',
+  content: `
+    Vercel provides the easiest and most optimized environment to deploy Next.js apps.
+
+    🚀 Deployment Steps:
+
+    1. Push your project to GitHub.
+    2. Go to https://vercel.com → Import Project.
+    3. Select your repository → Click Deploy.
+    4. Add Environment Variables under Project → Settings → Environment Variables.
+    5. Redeploy.
+
+    🌐 Environment Variables Example:
+      NEXT_PUBLIC_API_URL=https://api.yourapp.com
+      MONGODB_URI=mongodb+srv://...
+
+    🧠 Tips:
+    - For ISR/SSG pages, Vercel auto-optimizes build.
+    - Use vercel build locally to debug production issues.
+    - Monitor logs in Vercel → Functions → Logs.
+
+    💡 Result:
+    - Fast global CDN delivery
+    - Automatic HTTPS
+    - Zero server management
+  `,
+},
+
+'how-i-built-wanderlust': {
+  title: 'How I Built WanderLust Travel Hub',
+  date: 'November 5, 2024',
+  content: `
+    WanderLust Travel Hub is a travel exploration platform that lets users browse 
+    destinations, view travel stories, and get inspired for new trips.
+
+    🏗️ Stack Used:
+    - Next.js (App Router)
+    - Tailwind CSS
+    - Cloud-hosted Images
+    - Reusable UI components
+
+    🎨 Design Approach:
+    - Clean, modern layout
+    - Visual storytelling using images
+    - Soft gradients and consistent spacing
+
+    🧠 Key Features Implemented:
+    - Destination cards grid layout
+    - Fully responsive UI for mobile screens
+    - Reusable page structure for travel details
+    - Semantic routing using app/blog/[slug]
+
+    📦 Deployment:
+    - Hosted on Vercel for fast global access.
+
+    ✅ What I learned:
+    - Importance of visual hierarchy in travel websites
+    - Consistency in spacing and typography
+    - Iterative UI improvements instead of designing everything upfront
+
+    This project helped me grow both as a designer and a front-end engineer.
+  `,
+}
 };
 
 export default async function BlogPost({ params }) {
